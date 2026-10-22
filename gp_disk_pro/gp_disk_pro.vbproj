@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0369D60-23DA-460F-BD5D-9DFC4FCF80C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>gp_disk_pro.My.MyApplication</StartupObject>
+    <RootNamespace>gp_disk_pro</RootNamespace>
+    <AssemblyName>gp_disk_pro</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>gp_disk_pro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>gp_disk_pro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1461341424_calculator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="gp_disk_pro">
+      <HintPath>obj\x86\Debug\gp_disk_pro.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Release\gp_tafrgh_dbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gp_tafrgh_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_ndb.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ndb.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_darab_frm.Designer.vb">
+      <DependentUpon>add_darab_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_darab_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\add_emp_frm.Designer.vb">
+      <DependentUpon>add_emp_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_emp_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\add_ndb_frm.Designer.vb">
+      <DependentUpon>add_ndb_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_ndb_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\add_tafrgh_frm.Designer.vb">
+      <DependentUpon>add_tafrgh_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_tafrgh_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\add_taswy_frm.Designer.vb">
+      <DependentUpon>add_taswy_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\add_taswy_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\cal_form.Designer.vb">
+      <DependentUpon>cal_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\cal_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Deled_all_drab_shatb.Designer.vb">
+      <DependentUpon>Deled_all_drab_shatb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Deled_all_drab_shatb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\drab_print_frm.Designer.vb">
+      <DependentUpon>drab_print_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\drab_print_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\edit_form_tafrgh.Designer.vb">
+      <DependentUpon>edit_form_tafrgh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\edit_form_tafrgh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Edit_salary_ass_Form.Designer.vb">
+      <DependentUpon>Edit_salary_ass_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Edit_salary_ass_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\excel_add_form.Designer.vb">
+      <DependentUpon>excel_add_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\excel_add_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\export_from_database_Form.Designer.vb">
+      <DependentUpon>export_from_database_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\export_from_database_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_pay.Designer.vb">
+      <DependentUpon>Form_pay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_pay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_select_text.designer.vb">
+      <DependentUpon>Form_select_text.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_select_text.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_update_emp2.Designer.vb">
+      <DependentUpon>Form_update_emp2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_update_emp2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_view_all_emp.Designer.vb">
+      <DependentUpon>Form_view_all_emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_view_all_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_gp.Designer.vb">
+      <DependentUpon>Form_add_gp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_gp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_mkf.Designer.vb">
+      <DependentUpon>Form_add_mkf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_mkf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_tfrgh.Designer.vb">
+      <DependentUpon>Form_add_tfrgh.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_gps\Form_add_tfrgh.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frm_gps\Form_Add_user.Designer.vb">
+      <DependentUpon>Form_Add_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_Add_user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_all_gps.Designer.vb">
+      <DependentUpon>Form_all_gps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_all_gps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_all_mkf.Designer.vb">
+      <DependentUpon>Form_all_mkf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_all_mkf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_backup_data_base.Designer.vb">
+      <DependentUpon>Form_backup_data_base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_backup_data_base.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_delete_all_kashf.Designer.vb">
+      <DependentUpon>Form_delete_all_kashf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_delete_all_kashf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_display_no_kasshf.Designer.vb">
+      <DependentUpon>Form_display_no_kasshf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_display_no_kasshf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_edite_bnd_name.Designer.vb">
+      <DependentUpon>Form_edite_bnd_name.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_edite_bnd_name.vb" />
+    <Compile Include="frm_gps\Form_enter_bnd.Designer.vb">
+      <DependentUpon>Form_enter_bnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_enter_bnd.vb" />
+    <Compile Include="frm_gps\Form_enter_bnd_mostkta.Designer.vb">
+      <DependentUpon>Form_enter_bnd_mostkta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_enter_bnd_mostkta.vb" />
+    <Compile Include="frm_gps\Form_enter_data_bnd.Designer.vb">
+      <DependentUpon>Form_enter_data_bnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_enter_data_bnd.vb" />
+    <Compile Include="frm_gps\Form_password.Designer.vb">
+      <DependentUpon>Form_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_crstal_total_bnd.Designer.vb">
+      <DependentUpon>Form_print_crstal_total_bnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_crstal_total_bnd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_crystal.Designer.vb">
+      <DependentUpon>Form_print_crystal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_crystal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_excell_all_total_bnd.Designer.vb">
+      <DependentUpon>Form_print_excell_all_total_bnd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_excell_all_total_bnd.vb" />
+    <Compile Include="frm_gps\Form_print_tfrgh.Designer.vb">
+      <DependentUpon>Form_print_tfrgh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_print_tfrgh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_report_day.Designer.vb">
+      <DependentUpon>Form_report_day.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_report_day.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_report_gps.Designer.vb">
+      <DependentUpon>Form_report_gps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_report_gps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\Form_update_emp.Designer.vb">
+      <DependentUpon>Form_update_emp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\Form_update_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\frm_hlep.Designer.vb">
+      <DependentUpon>frm_hlep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\frm_hlep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\frm_viewer.Designer.vb">
+      <DependentUpon>frm_viewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\frm_viewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\ndb_frm_all_excel_upload.Designer.vb">
+      <DependentUpon>ndb_frm_all_excel_upload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\ndb_frm_all_excel_upload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\print_taswy_frm.Designer.vb">
+      <DependentUpon>print_taswy_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\print_taswy_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\salary_add_Form.Designer.vb">
+      <DependentUpon>salary_add_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\salary_add_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\search_emp_q.Designer.vb">
+      <DependentUpon>search_emp_q.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\search_emp_q.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\search_tafrgh.Designer.vb">
+      <DependentUpon>search_tafrgh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\search_tafrgh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\search_taswy_frm.Designer.vb">
+      <DependentUpon>search_taswy_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\search_taswy_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\select_drab_Form.Designer.vb">
+      <DependentUpon>select_drab_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\select_drab_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\total_kshf_form.Designer.vb">
+      <DependentUpon>total_kshf_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\total_kshf_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\try_form.Designer.vb">
+      <DependentUpon>try_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\try_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gps\view_frm_2.Designer.vb">
+      <DependentUpon>view_frm_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_gps\view_frm_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gp_tafrgh_dbDataSet21.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gp_tafrgh_dbDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gp_tafrgh_dbDataSet31.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gp_tafrgh_dbDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gp_tafrgh_dbDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gp_tafrgh_dbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="modul\CurrencyInfo.vb" />
+    <Compile Include="modul\export_data_base_Module.vb" />
+    <Compile Include="modul\Module_drab.vb" />
+    <Compile Include="modul\Module_salary_ass.vb" />
+    <Compile Include="modul\Module_add_gp.vb" />
+    <Compile Include="modul\Module_add_mkf.vb" />
+    <Compile Include="modul\Module_add_tfrghh.vb" />
+    <Compile Include="modul\Module_Add_user.vb" />
+    <Compile Include="modul\Module_edite_bnd_name.vb" />
+    <Compile Include="modul\Module_emp.vb" />
+    <Compile Include="modul\Module_enter_data_bnd.vb" />
+    <Compile Include="modul\Module_export_to_excell.vb" />
+    <Compile Include="modul\Module_frm1.vb" />
+    <Compile Include="modul\Module_print_all_bnd_to Excell.vb" />
+    <Compile Include="modul\Module_print_tfrgh.vb" />
+    <Compile Include="modul\Module_repot_add.vb" />
+    <Compile Include="modul\Module_try1.vb" />
+    <Compile Include="modul\Module_user1.vb" />
+    <Compile Include="modul\search_tafrgh.vb" />
+    <Compile Include="modul\ToWord.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="number_to_word_UserControl1.Designer.vb">
+      <DependentUpon>number_to_word_UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="number_to_word_UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report_folder\view_frm_3.Designer.vb">
+      <DependentUpon>view_frm_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report_folder\view_frm_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_gps\add_darab_frm.resx">
+      <DependentUpon>add_darab_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\add_emp_frm.resx">
+      <DependentUpon>add_emp_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\add_ndb_frm.resx">
+      <DependentUpon>add_ndb_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\add_tafrgh_frm.resx">
+      <DependentUpon>add_tafrgh_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\add_taswy_frm.resx">
+      <DependentUpon>add_taswy_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\cal_form.resx">
+      <DependentUpon>cal_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Deled_all_drab_shatb.resx">
+      <DependentUpon>Deled_all_drab_shatb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\drab_print_frm.resx">
+      <DependentUpon>drab_print_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\edit_form_tafrgh.resx">
+      <DependentUpon>edit_form_tafrgh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Edit_salary_ass_Form.resx">
+      <DependentUpon>Edit_salary_ass_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\excel_add_form.resx">
+      <DependentUpon>excel_add_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\export_from_database_Form.resx">
+      <DependentUpon>export_from_database_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_pay.resx">
+      <DependentUpon>Form_pay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_select_text.resx">
+      <DependentUpon>Form_select_text.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_update_emp2.resx">
+      <DependentUpon>Form_update_emp2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_view_all_emp.resx">
+      <DependentUpon>Form_view_all_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_add_gp.resx">
+      <DependentUpon>Form_add_gp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_add_mkf.resx">
+      <DependentUpon>Form_add_mkf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_add_tfrgh.resx">
+      <DependentUpon>Form_add_tfrgh.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_Add_user.resx">
+      <DependentUpon>Form_Add_user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_all_gps.resx">
+      <DependentUpon>Form_all_gps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_all_mkf.resx">
+      <DependentUpon>Form_all_mkf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_backup_data_base.resx">
+      <DependentUpon>Form_backup_data_base.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_delete_all_kashf.resx">
+      <DependentUpon>Form_delete_all_kashf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_display_no_kasshf.resx">
+      <DependentUpon>Form_display_no_kasshf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_edite_bnd_name.resx">
+      <DependentUpon>Form_edite_bnd_name.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_enter_bnd.resx">
+      <DependentUpon>Form_enter_bnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_enter_bnd_mostkta.resx">
+      <DependentUpon>Form_enter_bnd_mostkta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_enter_data_bnd.resx">
+      <DependentUpon>Form_enter_data_bnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_password.resx">
+      <DependentUpon>Form_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_print_crstal_total_bnd.resx">
+      <DependentUpon>Form_print_crstal_total_bnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_print_crystal.resx">
+      <DependentUpon>Form_print_crystal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_print_excell_all_total_bnd.resx">
+      <DependentUpon>Form_print_excell_all_total_bnd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_print_tfrgh.resx">
+      <DependentUpon>Form_print_tfrgh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_report_day.resx">
+      <DependentUpon>Form_report_day.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_report_gps.resx">
+      <DependentUpon>Form_report_gps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\Form_update_emp.resx">
+      <DependentUpon>Form_update_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\frm_hlep.resx">
+      <DependentUpon>frm_hlep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\frm_viewer.resx">
+      <DependentUpon>frm_viewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\ndb_frm_all_excel_upload.resx">
+      <DependentUpon>ndb_frm_all_excel_upload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\print_taswy_frm.resx">
+      <DependentUpon>print_taswy_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_folder\Report1.rdlc" />
+    <EmbeddedResource Include="report_folder\Report3.rdlc" />
+    <EmbeddedResource Include="frm_gps\salary_add_Form.resx">
+      <DependentUpon>salary_add_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\search_emp_q.resx">
+      <DependentUpon>search_emp_q.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\search_tafrgh.resx">
+      <DependentUpon>search_tafrgh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\search_taswy_frm.resx">
+      <DependentUpon>search_taswy_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\select_drab_Form.resx">
+      <DependentUpon>select_drab_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\total_kshf_form.resx">
+      <DependentUpon>total_kshf_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\try_form.resx">
+      <DependentUpon>try_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gps\view_frm_2.resx">
+      <DependentUpon>view_frm_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="number_to_word_UserControl1.resx">
+      <DependentUpon>number_to_word_UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_folder\view_frm_3.resx">
+      <DependentUpon>view_frm_3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\gp_disk_pro.exe.config" />
+    <None Include="bin\Release\DATABASE.rar" />
+    <None Include="bin\Release\DATABASE\page_print_all_bnd.xls" />
+    <None Include="bin\Release\DATABASE\page_tfrgh.xls" />
+    <None Include="bin\Release\DATABASE\page_tfrgh.xlsx" />
+    <None Include="bin\Release\DATABASE\Pay-krke_george-20190618-100047.xlsx" />
+    <None Include="bin\Release\DATABASE\ProductsList.xlsx" />
+    <None Include="bin\Release\DATABASE\tfrgh_sanwy.xls" />
+    <None Include="bin\Release\DATABASE\tfrgh_total.xls" />
+    <None Include="bin\Release\gp_disk_pro.exe.config" />
+    <None Include="bin\Release\gp_disk_pro.vshost.exe.config" />
+    <None Include="bin\Release\gp_disk_pro.vshost.exe.manifest" />
+    <None Include="bin\Release\gp_tafrgh_dbDataSet1.xsc">
+      <DependentUpon>gp_tafrgh_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Release\gp_tafrgh_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gp_tafrgh_dbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Release\gp_tafrgh_dbDataSet1.xss">
+      <DependentUpon>gp_tafrgh_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Release\page_print_all_bnd.xls" />
+    <None Include="bin\Release\page_tfrgh.xls" />
+    <None Include="bin\Release\page_tfrgh.xlsx" />
+    <None Include="bin\Release\Pay-krke_george-20190618-100047.xlsx" />
+    <None Include="bin\Release\ProductsList.xlsx" />
+    <None Include="bin\Release\tfrgh_sanwy.xls" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <Fakes Include="Fakes\Microsoft.ReportViewer.Common.fakes" />
+    <Fakes Include="Fakes\Microsoft.ReportViewer.WinForms.fakes" />
+    <Fakes Include="Fakes\Microsoft.Office.Interop.Excel.fakes" />
+    <None Include="DataSet_ndb.xsc">
+      <DependentUpon>DataSet_ndb.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_ndb.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ndb.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet_ndb.xss">
+      <DependentUpon>DataSet_ndb.xsd</DependentUpon>
+    </None>
+    <None Include="frm_gps\page_tfrgh.xlsx" />
+    <None Include="gp_tafrgh_dbDataSet21.xsc">
+      <DependentUpon>gp_tafrgh_dbDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gp_tafrgh_dbDataSet21.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet21.xss">
+      <DependentUpon>gp_tafrgh_dbDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet31.xsc">
+      <DependentUpon>gp_tafrgh_dbDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gp_tafrgh_dbDataSet31.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet31.xss">
+      <DependentUpon>gp_tafrgh_dbDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet5.xsc">
+      <DependentUpon>gp_tafrgh_dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gp_tafrgh_dbDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gp_tafrgh_dbDataSet5.xss">
+      <DependentUpon>gp_tafrgh_dbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Penguins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngMedium-Magnifying-Glass-13475.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductsList.xlsx" />
+    <None Include="Resources\tfrgh_sanwy.xls" />
+    <None Include="Resources\tfrgh_total.xls" />
+    <None Include="Resources\بحث.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\حفظ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forex-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1461341424_calculator.ico" />
+    <Content Include="bin\Debug\gp_disk_pro.exe" />
+    <Content Include="bin\Debug\gp_disk_pro.pdb" />
+    <None Include="bin\Debug\Resources\2024.jpg" />
+    <Content Include="bin\Release\gp_disk_pro.exe" />
+    <Content Include="bin\Release\gp_disk_pro.pdb" />
+    <Content Include="bin\Release\gp_disk_pro.vshost.exe" />
+    <Content Include="bin\Release\gp_disk_pro.xml" />
+    <Content Include="bin\Release\gp_tafrgh_db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gp_tafrgh_db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\1461341424_calculator.ico" />
+    <Resource Include="Resources\Accounting.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\Accounting2.jpg" />
+    <Content Include="Resources\forex-account2.jpg" />
+    <None Include="Resources\grg1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\grg2.jpg" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Image2.bmp" />
+    <Content Include="Resources\index - Copy %282%29.jpg" />
+    <Content Include="Resources\index - Copy.jpg" />
+    <Content Include="Resources\leran.png" />
+    <Content Include="Resources\mkf.jpg" />
+    <Content Include="Resources\move.jpg" />
+    <Content Include="Resources\nav_down_red - Copy %282%29.ico" />
+    <Content Include="Resources\nav_down_red - Copy.ico" />
+    <Content Include="Resources\nav_left_red - Copy %282%29.ico" />
+    <Content Include="Resources\nav_left_red - Copy.ico" />
+    <Content Include="Resources\nav_right_green - Copy %282%29.ico" />
+    <Content Include="Resources\nav_right_green - Copy.ico" />
+    <Content Include="Resources\nav_up_red - Copy %282%29.ico" />
+    <Content Include="Resources\nav_up_red - Copy.ico" />
+    <Content Include="Resources\New folder\Accounting.jpg" />
+    <Content Include="Resources\New folder\grg1.jpg" />
+    <None Include="Resources\New folder\grg2.jpg" />
+    <Content Include="Resources\Pictured1-300x210.png" />
+    <None Include="Resources\nav_left_red.ico" />
+    <None Include="Resources\nav_right_green.ico" />
+    <None Include="Resources\forex-11.jpg" />
+    <None Include="Resources\index.jpg" />
+    <None Include="Resources\database_add.png" />
+    <None Include="Resources\8c514b_3dc403d63cf545a190749251c8efb1aa_mv2.gif" />
+    <None Include="Resources\pleasedial_t7mjhhk91.gif" />
+    <None Include="Resources\pleasedial_t7mjhhk9.gif" />
+    <None Include="Resources\1267366.png" />
+    <None Include="Resources\delete2.ico" />
+    <None Include="Resources\window_edit.ico" />
+    <None Include="Resources\nav_down_red.ico" />
+    <None Include="Resources\nav_up_red.ico" />
+    <None Include="Resources\navigate_up2.ico" />
+    <None Include="Resources\book_blue_add.ico" />
+    <None Include="Resources\contract.ico" />
+    <None Include="Resources\befor.jpg" />
+    <None Include="Resources\after2.jpg" />
+    <None Include="Resources\after.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

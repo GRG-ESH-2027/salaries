@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="gp_tafrgh_dbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gp_tafrgh_dbConnectionString (MySettings)" PropertyReference="ApplicationSettings.gp_disk_pro.My.MySettings.GlobalReference.Default.gp_tafrgh_dbConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="select_all_bnd333TableAdapter" GeneratorDataComponentClassName="select_all_bnd333TableAdapter" Name="select_all_bnd333" UserDataComponentName="select_all_bnd333TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gp_tafrgh_dbConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tabel_bnd.id_bnd, tabel_bnd.no_of_kashf, tabel_bnd.des_bnd, tabel_bnd.mha_msthka, tabel_bnd.agr_wazef, tabel_bnd.agr_mkml, tabel_bnd.hafz_tayde, 
+                         tabel_bnd.hafez_mkto, tabel_bnd.hafez_tkamel, tabel_bnd.bdl_akam, tabel_bnd.adfya, tabel_bnd.agtmai, tabel_bnd.mnha, tabel_bnd.bdl_nzar, tabel_bnd.bdl_tfrgh, 
+                         tabel_bnd.bdl_adwa, tabel_bnd.alao_2014, tabel_bnd.alao_2015, tabel_bnd.bdl_moalm, tabel_bnd.bdl_etmad, tabel_bnd.aba_wzefea, tabel_bnd.hafez_ada, 
+                         tabel_bnd.hafz_25, tabel_bnd.mgster, tabel_bnd.computer, tabel_bnd.doctora, tabel_bnd.bnd_adafy_1, tabel_bnd.bnd_adafy_2, tabel_bnd.total_bnd, 
+                         table_bnd_mostkta.mashat_9, table_bnd_mostkta.mashat_1, table_bnd_mostkta.m_1, table_bnd_mostkta.nkabt_mhn, table_bnd_mostkta.nady, 
+                         table_bnd_mostkta.mostchfa, table_bnd_mostkta.tabeka, table_bnd_mostkta.s_7, table_bnd_mostkta.lgna, table_bnd_mostkta.cndok, table_bnd_mostkta.raya_5, 
+                         table_bnd_mostkta.drab_ksb, table_bnd_mostkta.tswa_drab, table_bnd_mostkta.ghtoto, table_bnd_mostkta.slf_nkba_m, table_bnd_mostkta.bnk_naser, 
+                         table_bnd_mostkta.masr_tamen, table_bnd_mostkta.zrahen, table_bnd_mostkta.mash_ahara, table_bnd_mostkta.nfka, table_bnd_mostkta.erdat, 
+                         table_bnd_mostkta.atbare, table_bnd_mostkta.eskndra, table_bnd_mostkta.damgha_adya, table_bnd_mostkta.sandok_gzat, table_bnd_mostkta.gzat, 
+                         table_bnd_mostkta.mhn_readay, table_bnd_mostkta.asnaf_moba, table_bnd_mostkta.hafez, table_bnd_mostkta.dewn, table_bnd_mostkta.bnd_adfy_1, 
+                         table_bnd_mostkta.bnd_adfy_2, table_bnd_mostkta.total_mostkta_1, table_bnd_mostkta.total_saffy
+FROM            (tabel_bnd INNER JOIN
+                         table_bnd_mostkta ON tabel_bnd.id_bnd = table_bnd_mostkta.id_bnd)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_bnd" DataSetColumn="id_bnd" />
+              <Mapping SourceColumn="no_of_kashf" DataSetColumn="no_of_kashf" />
+              <Mapping SourceColumn="des_bnd" DataSetColumn="des_bnd" />
+              <Mapping SourceColumn="mha_msthka" DataSetColumn="mha_msthka" />
+              <Mapping SourceColumn="agr_wazef" DataSetColumn="agr_wazef" />
+              <Mapping SourceColumn="agr_mkml" DataSetColumn="agr_mkml" />
+              <Mapping SourceColumn="hafz_tayde" DataSetColumn="hafz_tayde" />
+              <Mapping SourceColumn="hafez_mkto" DataSetColumn="hafez_mkto" />
+              <Mapping SourceColumn="hafez_tkamel" DataSetColumn="hafez_tkamel" />
+              <Mapping SourceColumn="bdl_akam" DataSetColumn="bdl_akam" />
+              <Mapping SourceColumn="adfya" DataSetColumn="adfya" />
+              <Mapping SourceColumn="agtmai" DataSetColumn="agtmai" />
+              <Mapping SourceColumn="mnha" DataSetColumn="mnha" />
+              <Mapping SourceColumn="bdl_nzar" DataSetColumn="bdl_nzar" />
+              <Mapping SourceColumn="bdl_tfrgh" DataSetColumn="bdl_tfrgh" />
+              <Mapping SourceColumn="bdl_adwa" DataSetColumn="bdl_adwa" />
+              <Mapping SourceColumn="alao_2014" DataSetColumn="alao_2014" />
+              <Mapping SourceColumn="alao_2015" DataSetColumn="alao_2015" />
+              <Mapping SourceColumn="bdl_moalm" DataSetColumn="bdl_moalm" />
+              <Mapping SourceColumn="bdl_etmad" DataSetColumn="bdl_etmad" />
+              <Mapping SourceColumn="aba_wzefea" DataSetColumn="aba_wzefea" />
+              <Mapping SourceColumn="hafez_ada" DataSetColumn="hafez_ada" />
+              <Mapping SourceColumn="hafz_25" DataSetColumn="hafz_25" />
+              <Mapping SourceColumn="mgster" DataSetColumn="mgster" />
+              <Mapping SourceColumn="computer" DataSetColumn="computer" />
+              <Mapping SourceColumn="doctora" DataSetColumn="doctora" />
+              <Mapping SourceColumn="bnd_adafy_1" DataSetColumn="bnd_adafy_1" />
+              <Mapping SourceColumn="bnd_adafy_2" DataSetColumn="bnd_adafy_2" />
+              <Mapping SourceColumn="total_bnd" DataSetColumn="total_bnd" />
+              <Mapping SourceColumn="mashat_9" DataSetColumn="mashat_9" />
+              <Mapping SourceColumn="mashat_1" DataSetColumn="mashat_1" />
+              <Mapping SourceColumn="m_1" DataSetColumn="m_1" />
+              <Mapping SourceColumn="nkabt_mhn" DataSetColumn="nkabt_mhn" />
+              <Mapping SourceColumn="nady" DataSetColumn="nady" />
+              <Mapping SourceColumn="mostchfa" DataSetColumn="mostchfa" />
+              <Mapping SourceColumn="tabeka" DataSetColumn="tabeka" />
+              <Mapping SourceColumn="s_7" DataSetColumn="s_7" />
+              <Mapping SourceColumn="lgna" DataSetColumn="lgna" />
+              <Mapping SourceColumn="cndok" DataSetColumn="cndok" />
+              <Mapping SourceColumn="raya_5" DataSetColumn="raya_5" />
+              <Mapping SourceColumn="drab_ksb" DataSetColumn="drab_ksb" />
+              <Mapping SourceColumn="tswa_drab" DataSetColumn="tswa_drab" />
+              <Mapping SourceColumn="ghtoto" DataSetColumn="ghtoto" />
+              <Mapping SourceColumn="slf_nkba_m" DataSetColumn="slf_nkba_m" />
+              <Mapping SourceColumn="bnk_naser" DataSetColumn="bnk_naser" />
+              <Mapping SourceColumn="masr_tamen" DataSetColumn="masr_tamen" />
+              <Mapping SourceColumn="zrahen" DataSetColumn="zrahen" />
+              <Mapping SourceColumn="mash_ahara" DataSetColumn="mash_ahara" />
+              <Mapping SourceColumn="nfka" DataSetColumn="nfka" />
+              <Mapping SourceColumn="erdat" DataSetColumn="erdat" />
+              <Mapping SourceColumn="atbare" DataSetColumn="atbare" />
+              <Mapping SourceColumn="eskndra" DataSetColumn="eskndra" />
+              <Mapping SourceColumn="damgha_adya" DataSetColumn="damgha_adya" />
+              <Mapping SourceColumn="sandok_gzat" DataSetColumn="sandok_gzat" />
+              <Mapping SourceColumn="gzat" DataSetColumn="gzat" />
+              <Mapping SourceColumn="mhn_readay" DataSetColumn="mhn_readay" />
+              <Mapping SourceColumn="asnaf_moba" DataSetColumn="asnaf_moba" />
+              <Mapping SourceColumn="hafez" DataSetColumn="hafez" />
+              <Mapping SourceColumn="dewn" DataSetColumn="dewn" />
+              <Mapping SourceColumn="bnd_adfy_1" DataSetColumn="bnd_adfy_1" />
+              <Mapping SourceColumn="bnd_adfy_2" DataSetColumn="bnd_adfy_2" />
+              <Mapping SourceColumn="total_mostkta_1" DataSetColumn="total_mostkta_1" />
+              <Mapping SourceColumn="total_saffy" DataSetColumn="total_saffy" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="select_all_bnd333" msprop:Generator_TableClassName="select_all_bnd333DataTable" msprop:Generator_TableVarName="tableselect_all_bnd333" msprop:Generator_TablePropName="select_all_bnd333" msprop:Generator_RowDeletingName="select_all_bnd333RowDeleting" msprop:Generator_UserTableName="select_all_bnd333" msprop:Generator_RowChangingName="select_all_bnd333RowChanging" msprop:Generator_RowEvHandlerName="select_all_bnd333RowChangeEventHandler" msprop:Generator_RowDeletedName="select_all_bnd333RowDeleted" msprop:Generator_RowEvArgName="select_all_bnd333RowChangeEvent" msprop:Generator_RowChangedName="select_all_bnd333RowChanged" msprop:Generator_RowClassName="select_all_bnd333Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_bnd" msprop:Generator_ColumnVarNameInTable="columnid_bnd" msprop:Generator_ColumnPropNameInRow="id_bnd" msprop:Generator_ColumnPropNameInTable="id_bndColumn" msprop:Generator_UserColumnName="id_bnd" type="xs:int" minOccurs="0" />
+              <xs:element name="no_of_kashf" msprop:Generator_ColumnVarNameInTable="columnno_of_kashf" msprop:Generator_ColumnPropNameInRow="no_of_kashf" msprop:Generator_ColumnPropNameInTable="no_of_kashfColumn" msprop:Generator_UserColumnName="no_of_kashf" type="xs:int" minOccurs="0" />
+              <xs:element name="des_bnd" msprop:Generator_ColumnVarNameInTable="columndes_bnd" msprop:Generator_ColumnPropNameInRow="des_bnd" msprop:Generator_ColumnPropNameInTable="des_bndColumn" msprop:Generator_UserColumnName="des_bnd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mha_msthka" msprop:Generator_ColumnVarNameInTable="columnmha_msthka" msprop:Generator_ColumnPropNameInRow="mha_msthka" msprop:Generator_ColumnPropNameInTable="mha_msthkaColumn" msprop:Generator_UserColumnName="mha_msthka" type="xs:double" minOccurs="0" />
+              <xs:element name="agr_wazef" msprop:Generator_ColumnVarNameInTable="columnagr_wazef" msprop:Generator_ColumnPropNameInRow="agr_wazef" msprop:Generator_ColumnPropNameInTable="agr_wazefColumn" msprop:Generator_UserColumnName="agr_wazef" type="xs:double" minOccurs="0" />
+              <xs:element name="agr_mkml" msprop:Generator_ColumnVarNameInTable="columnagr_mkml" msprop:Generator_ColumnPropNameInRow="agr_mkml" msprop:Generator_ColumnPropNameInTable="agr_mkmlColumn" msprop:Generator_UserColumnName="agr_mkml" type="xs:double" minOccurs="0" />
+              <xs:element name="hafz_tayde" msprop:Generator_ColumnVarNameInTable="columnhafz_tayde" msprop:Generator_ColumnPropNameInRow="hafz_tayde" msprop:Generator_ColumnPropNameInTable="hafz_taydeColumn" msprop:Generator_UserColumnName="hafz_tayde" type="xs:double" minOccurs="0" />
+              <xs:element name="hafez_mkto" msprop:Generator_ColumnVarNameInTable="columnhafez_mkto" msprop:Generator_ColumnPropNameInRow="hafez_mkto" msprop:Generator_ColumnPropNameInTable="hafez_mktoColumn" msprop:Generator_UserColumnName="hafez_mkto" type="xs:double" minOccurs="0" />
+              <xs:element name="hafez_tkamel" msprop:Generator_ColumnVarNameInTable="columnhafez_tkamel" msprop:Generator_ColumnPropNameInRow="hafez_tkamel" msprop:Generator_ColumnPropNameInTable="hafez_tkamelColumn" msprop:Generator_UserColumnName="hafez_tkamel" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_akam" msprop:Generator_ColumnVarNameInTable="columnbdl_akam" msprop:Generator_ColumnPropNameInRow="bdl_akam" msprop:Generator_ColumnPropNameInTable="bdl_akamColumn" msprop:Generator_UserColumnName="bdl_akam" type="xs:double" minOccurs="0" />
+              <xs:element name="adfya" msprop:Generator_ColumnVarNameInTable="columnadfya" msprop:Generator_ColumnPropNameInRow="adfya" msprop:Generator_ColumnPropNameInTable="adfyaColumn" msprop:Generator_UserColumnName="adfya" type="xs:double" minOccurs="0" />
+              <xs:element name="agtmai" msprop:Generator_ColumnVarNameInTable="columnagtmai" msprop:Generator_ColumnPropNameInRow="agtmai" msprop:Generator_ColumnPropNameInTable="agtmaiColumn" msprop:Generator_UserColumnName="agtmai" type="xs:double" minOccurs="0" />
+              <xs:element name="mnha" msprop:Generator_ColumnVarNameInTable="columnmnha" msprop:Generator_ColumnPropNameInRow="mnha" msprop:Generator_ColumnPropNameInTable="mnhaColumn" msprop:Generator_UserColumnName="mnha" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_nzar" msprop:Generator_ColumnVarNameInTable="columnbdl_nzar" msprop:Generator_ColumnPropNameInRow="bdl_nzar" msprop:Generator_ColumnPropNameInTable="bdl_nzarColumn" msprop:Generator_UserColumnName="bdl_nzar" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_tfrgh" msprop:Generator_ColumnVarNameInTable="columnbdl_tfrgh" msprop:Generator_ColumnPropNameInRow="bdl_tfrgh" msprop:Generator_ColumnPropNameInTable="bdl_tfrghColumn" msprop:Generator_UserColumnName="bdl_tfrgh" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_adwa" msprop:Generator_ColumnVarNameInTable="columnbdl_adwa" msprop:Generator_ColumnPropNameInRow="bdl_adwa" msprop:Generator_ColumnPropNameInTable="bdl_adwaColumn" msprop:Generator_UserColumnName="bdl_adwa" type="xs:double" minOccurs="0" />
+              <xs:element name="alao_2014" msprop:Generator_ColumnVarNameInTable="columnalao_2014" msprop:Generator_ColumnPropNameInRow="alao_2014" msprop:Generator_ColumnPropNameInTable="alao_2014Column" msprop:Generator_UserColumnName="alao_2014" type="xs:double" minOccurs="0" />
+              <xs:element name="alao_2015" msprop:Generator_ColumnVarNameInTable="columnalao_2015" msprop:Generator_ColumnPropNameInRow="alao_2015" msprop:Generator_ColumnPropNameInTable="alao_2015Column" msprop:Generator_UserColumnName="alao_2015" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_moalm" msprop:Generator_ColumnVarNameInTable="columnbdl_moalm" msprop:Generator_ColumnPropNameInRow="bdl_moalm" msprop:Generator_ColumnPropNameInTable="bdl_moalmColumn" msprop:Generator_UserColumnName="bdl_moalm" type="xs:double" minOccurs="0" />
+              <xs:element name="bdl_etmad" msprop:Generator_ColumnVarNameInTable="columnbdl_etmad" msprop:Generator_ColumnPropNameInRow="bdl_etmad" msprop:Generator_ColumnPropNameInTable="bdl_etmadColumn" msprop:Generator_UserColumnName="bdl_etmad" type="xs:double" minOccurs="0" />
+              <xs:element name="aba_wzefea" msprop:Generator_ColumnVarNameInTable="columnaba_wzefea" msprop:Generator_ColumnPropNameInRow="aba_wzefea" msprop:Generator_ColumnPropNameInTable="aba_wzefeaColumn" msprop:Generator_UserColumnName="aba_wzefea" type="xs:double" minOccurs="0" />
+              <xs:element name="hafez_ada" msprop:Generator_ColumnVarNameInTable="columnhafez_ada" msprop:Generator_ColumnPropNameInRow="hafez_ada" msprop:Generator_ColumnPropNameInTable="hafez_adaColumn" msprop:Generator_UserColumnName="hafez_ada" type="xs:double" minOccurs="0" />
+              <xs:element name="hafz_25" msprop:Generator_ColumnVarNameInTable="columnhafz_25" msprop:Generator_ColumnPropNameInRow="hafz_25" msprop:Generator_ColumnPropNameInTable="hafz_25Column" msprop:Generator_UserColumnName="hafz_25" type="xs:double" minOccurs="0" />
+              <xs:element name="mgster" msprop:Generator_ColumnVarNameInTable="columnmgster" msprop:Generator_ColumnPropNameInRow="mgster" msprop:Generator_ColumnPropNameInTable="mgsterColumn" msprop:Generator_UserColumnName="mgster" type="xs:double" minOccurs="0" />
+              <xs:element name="computer" msprop:Generator_ColumnVarNameInTable="columncomputer" msprop:Generator_ColumnPropNameInRow="computer" msprop:Generator_ColumnPropNameInTable="computerColumn" msprop:Generator_UserColumnName="computer" type="xs:double" minOccurs="0" />
+              <xs:element name="doctora" msprop:Generator_ColumnVarNameInTable="columndoctora" msprop:Generator_ColumnPropNameInRow="doctora" msprop:Generator_ColumnPropNameInTable="doctoraColumn" msprop:Generator_UserColumnName="doctora" type="xs:double" minOccurs="0" />
+              <xs:element name="bnd_adafy_1" msprop:Generator_ColumnVarNameInTable="columnbnd_adafy_1" msprop:Generator_ColumnPropNameInRow="bnd_adafy_1" msprop:Generator_ColumnPropNameInTable="bnd_adafy_1Column" msprop:Generator_UserColumnName="bnd_adafy_1" type="xs:double" minOccurs="0" />
+              <xs:element name="bnd_adafy_2" msprop:Generator_ColumnVarNameInTable="columnbnd_adafy_2" msprop:Generator_ColumnPropNameInRow="bnd_adafy_2" msprop:Generator_ColumnPropNameInTable="bnd_adafy_2Column" msprop:Generator_UserColumnName="bnd_adafy_2" type="xs:double" minOccurs="0" />
+              <xs:element name="total_bnd" msprop:Generator_ColumnVarNameInTable="columntotal_bnd" msprop:Generator_ColumnPropNameInRow="total_bnd" msprop:Generator_ColumnPropNameInTable="total_bndColumn" msprop:Generator_UserColumnName="total_bnd" type="xs:double" minOccurs="0" />
+              <xs:element name="mashat_9" msprop:Generator_ColumnVarNameInTable="columnmashat_9" msprop:Generator_ColumnPropNameInRow="mashat_9" msprop:Generator_ColumnPropNameInTable="mashat_9Column" msprop:Generator_UserColumnName="mashat_9" type="xs:double" minOccurs="0" />
+              <xs:element name="mashat_1" msprop:Generator_ColumnVarNameInTable="columnmashat_1" msprop:Generator_ColumnPropNameInRow="mashat_1" msprop:Generator_ColumnPropNameInTable="mashat_1Column" msprop:Generator_UserColumnName="mashat_1" type="xs:double" minOccurs="0" />
+              <xs:element name="m_1" msprop:Generator_ColumnVarNameInTable="columnm_1" msprop:Generator_ColumnPropNameInRow="m_1" msprop:Generator_ColumnPropNameInTable="m_1Column" msprop:Generator_UserColumnName="m_1" type="xs:double" minOccurs="0" />
+              <xs:element name="nkabt_mhn" msprop:Generator_ColumnVarNameInTable="columnnkabt_mhn" msprop:Generator_ColumnPropNameInRow="nkabt_mhn" msprop:Generator_ColumnPropNameInTable="nkabt_mhnColumn" msprop:Generator_UserColumnName="nkabt_mhn" type="xs:double" minOccurs="0" />
+              <xs:element name="nady" msprop:Generator_ColumnVarNameInTable="columnnady" msprop:Generator_ColumnPropNameInRow="nady" msprop:Generator_ColumnPropNameInTable="nadyColumn" msprop:Generator_UserColumnName="nady" type="xs:double" minOccurs="0" />
+              <xs:element name="mostchfa" msprop:Generator_ColumnVarNameInTable="columnmostchfa" msprop:Generator_ColumnPropNameInRow="mostchfa" msprop:Generator_ColumnPropNameInTable="mostchfaColumn" msprop:Generator_UserColumnName="mostchfa" type="xs:double" minOccurs="0" />
+              <xs:element name="tabeka" msprop:Generator_ColumnVarNameInTable="columntabeka" msprop:Generator_ColumnPropNameInRow="tabeka" msprop:Generator_ColumnPropNameInTable="tabekaColumn" msprop:Generator_UserColumnName="tabeka" type="xs:double" minOccurs="0" />
+              <xs:element name="s_7" msprop:Generator_ColumnVarNameInTable="columns_7" msprop:Generator_ColumnPropNameInRow="s_7" msprop:Generator_ColumnPropNameInTable="s_7Column" msprop:Generator_UserColumnName="s_7" type="xs:double" minOccurs="0" />
+              <xs:element name="lgna" msprop:Generator_ColumnVarNameInTable="columnlgna" msprop:Generator_ColumnPropNameInRow="lgna" msprop:Generator_ColumnPropNameInTable="lgnaColumn" msprop:Generator_UserColumnName="lgna" type="xs:double" minOccurs="0" />
+              <xs:element name="cndok" msprop:Generator_ColumnVarNameInTable="columncndok" msprop:Generator_ColumnPropNameInRow="cndok" msprop:Generator_ColumnPropNameInTable="cndokColumn" msprop:Generator_UserColumnName="cndok" type="xs:double" minOccurs="0" />
+              <xs:element name="raya_5" msprop:Generator_ColumnVarNameInTable="columnraya_5" msprop:Generator_ColumnPropNameInRow="raya_5" msprop:Generator_ColumnPropNameInTable="raya_5Column" msprop:Generator_UserColumnName="raya_5" type="xs:double" minOccurs="0" />
+              <xs:element name="drab_ksb" msprop:Generator_ColumnVarNameInTable="columndrab_ksb" msprop:Generator_ColumnPropNameInRow="drab_ksb" msprop:Generator_ColumnPropNameInTable="drab_ksbColumn" msprop:Generator_UserColumnName="drab_ksb" type="xs:double" minOccurs="0" />
+              <xs:element name="tswa_drab" msprop:Generator_ColumnVarNameInTable="columntswa_drab" msprop:Generator_ColumnPropNameInRow="tswa_drab" msprop:Generator_ColumnPropNameInTable="tswa_drabColumn" msprop:Generator_UserColumnName="tswa_drab" type="xs:double" minOccurs="0" />
+              <xs:element name="ghtoto" msprop:Generator_ColumnVarNameInTable="columnghtoto" msprop:Generator_ColumnPropNameInRow="ghtoto" msprop:Generator_ColumnPropNameInTable="ghtotoColumn" msprop:Generator_UserColumnName="ghtoto" type="xs:double" minOccurs="0" />
+              <xs:element name="slf_nkba_m" msprop:Generator_ColumnVarNameInTable="columnslf_nkba_m" msprop:Generator_ColumnPropNameInRow="slf_nkba_m" msprop:Generator_ColumnPropNameInTable="slf_nkba_mColumn" msprop:Generator_UserColumnName="slf_nkba_m" type="xs:double" minOccurs="0" />
+              <xs:element name="bnk_naser" msprop:Generator_ColumnVarNameInTable="columnbnk_naser" msprop:Generator_ColumnPropNameInRow="bnk_naser" msprop:Generator_ColumnPropNameInTable="bnk_naserColumn" msprop:Generator_UserColumnName="bnk_naser" type="xs:double" minOccurs="0" />
+              <xs:element name="masr_tamen" msprop:Generator_ColumnVarNameInTable="columnmasr_tamen" msprop:Generator_ColumnPropNameInRow="masr_tamen" msprop:Generator_ColumnPropNameInTable="masr_tamenColumn" msprop:Generator_UserColumnName="masr_tamen" type="xs:double" minOccurs="0" />
+              <xs:element name="zrahen" msprop:Generator_ColumnVarNameInTable="columnzrahen" msprop:Generator_ColumnPropNameInRow="zrahen" msprop:Generator_ColumnPropNameInTable="zrahenColumn" msprop:Generator_UserColumnName="zrahen" type="xs:double" minOccurs="0" />
+              <xs:element name="mash_ahara" msprop:Generator_ColumnVarNameInTable="columnmash_ahara" msprop:Generator_ColumnPropNameInRow="mash_ahara" msprop:Generator_ColumnPropNameInTable="mash_aharaColumn" msprop:Generator_UserColumnName="mash_ahara" type="xs:double" minOccurs="0" />
+              <xs:element name="nfka" msprop:Generator_ColumnVarNameInTable="columnnfka" msprop:Generator_ColumnPropNameInRow="nfka" msprop:Generator_ColumnPropNameInTable="nfkaColumn" msprop:Generator_UserColumnName="nfka" type="xs:double" minOccurs="0" />
+              <xs:element name="erdat" msprop:Generator_ColumnVarNameInTable="columnerdat" msprop:Generator_ColumnPropNameInRow="erdat" msprop:Generator_ColumnPropNameInTable="erdatColumn" msprop:Generator_UserColumnName="erdat" type="xs:double" minOccurs="0" />
+              <xs:element name="atbare" msprop:Generator_ColumnVarNameInTable="columnatbare" msprop:Generator_ColumnPropNameInRow="atbare" msprop:Generator_ColumnPropNameInTable="atbareColumn" msprop:Generator_UserColumnName="atbare" type="xs:double" minOccurs="0" />
+              <xs:element name="eskndra" msprop:Generator_ColumnVarNameInTable="columneskndra" msprop:Generator_ColumnPropNameInRow="eskndra" msprop:Generator_ColumnPropNameInTable="eskndraColumn" msprop:Generator_UserColumnName="eskndra" type="xs:double" minOccurs="0" />
+              <xs:element name="damgha_adya" msprop:Generator_ColumnVarNameInTable="columndamgha_adya" msprop:Generator_ColumnPropNameInRow="damgha_adya" msprop:Generator_ColumnPropNameInTable="damgha_adyaColumn" msprop:Generator_UserColumnName="damgha_adya" type="xs:double" minOccurs="0" />
+              <xs:element name="sandok_gzat" msprop:Generator_ColumnVarNameInTable="columnsandok_gzat" msprop:Generator_ColumnPropNameInRow="sandok_gzat" msprop:Generator_ColumnPropNameInTable="sandok_gzatColumn" msprop:Generator_UserColumnName="sandok_gzat" type="xs:double" minOccurs="0" />
+              <xs:element name="gzat" msprop:Generator_ColumnVarNameInTable="columngzat" msprop:Generator_ColumnPropNameInRow="gzat" msprop:Generator_ColumnPropNameInTable="gzatColumn" msprop:Generator_UserColumnName="gzat" type="xs:double" minOccurs="0" />
+              <xs:element name="mhn_readay" msprop:Generator_ColumnVarNameInTable="columnmhn_readay" msprop:Generator_ColumnPropNameInRow="mhn_readay" msprop:Generator_ColumnPropNameInTable="mhn_readayColumn" msprop:Generator_UserColumnName="mhn_readay" type="xs:double" minOccurs="0" />
+              <xs:element name="asnaf_moba" msprop:Generator_ColumnVarNameInTable="columnasnaf_moba" msprop:Generator_ColumnPropNameInRow="asnaf_moba" msprop:Generator_ColumnPropNameInTable="asnaf_mobaColumn" msprop:Generator_UserColumnName="asnaf_moba" type="xs:double" minOccurs="0" />
+              <xs:element name="hafez" msprop:Generator_ColumnVarNameInTable="columnhafez" msprop:Generator_ColumnPropNameInRow="hafez" msprop:Generator_ColumnPropNameInTable="hafezColumn" msprop:Generator_UserColumnName="hafez" type="xs:double" minOccurs="0" />
+              <xs:element name="dewn" msprop:Generator_ColumnVarNameInTable="columndewn" msprop:Generator_ColumnPropNameInRow="dewn" msprop:Generator_ColumnPropNameInTable="dewnColumn" msprop:Generator_UserColumnName="dewn" type="xs:double" minOccurs="0" />
+              <xs:element name="bnd_adfy_1" msprop:Generator_ColumnVarNameInTable="columnbnd_adfy_1" msprop:Generator_ColumnPropNameInRow="bnd_adfy_1" msprop:Generator_ColumnPropNameInTable="bnd_adfy_1Column" msprop:Generator_UserColumnName="bnd_adfy_1" type="xs:double" minOccurs="0" />
+              <xs:element name="bnd_adfy_2" msprop:Generator_ColumnVarNameInTable="columnbnd_adfy_2" msprop:Generator_ColumnPropNameInRow="bnd_adfy_2" msprop:Generator_ColumnPropNameInTable="bnd_adfy_2Column" msprop:Generator_UserColumnName="bnd_adfy_2" type="xs:double" minOccurs="0" />
+              <xs:element name="total_mostkta_1" msprop:Generator_ColumnVarNameInTable="columntotal_mostkta_1" msprop:Generator_ColumnPropNameInRow="total_mostkta_1" msprop:Generator_ColumnPropNameInTable="total_mostkta_1Column" msprop:Generator_UserColumnName="total_mostkta_1" type="xs:double" minOccurs="0" />
+              <xs:element name="total_saffy" msprop:Generator_ColumnVarNameInTable="columntotal_saffy" msprop:Generator_ColumnPropNameInRow="total_saffy" msprop:Generator_ColumnPropNameInTable="total_saffyColumn" msprop:Generator_UserColumnName="total_saffy" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
