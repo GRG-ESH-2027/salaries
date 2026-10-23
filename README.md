@@ -1,4 +1,4 @@
-<h2>Hey 👋, I'm <a href="https://github.com/GRG-ESH-2027">George Ishaq Boulos</a></h2>
+<h2>Hey 👋, I'm <a href="https://github.com/GRG-ESH-2027">George Eshak Boules</a></h2>
 <p>I'm currently working on projects in <strong>Python (Tkinter)</strong>, <strong>Oracle ERP</strong>, and <strong>Microsoft Office automation</strong>.  
 I also have professional experience in <strong>Cleaning Services</strong> and <strong>Sewing (Curtains & Clothes)</strong>.  
 My goal is to improve my German and English and find a job opportunity in Europe.</p>
